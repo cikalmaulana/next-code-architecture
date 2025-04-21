@@ -20,7 +20,6 @@ export function CE_NamingFile() {
                     <ul className="list-disc list-inside ml-6 mt-1">
                         <li><code>client</code> → Client Component (e.g., uses hooks, client-side logic)</li>
                         <li><code>server</code> → Server Component (e.g., uses async data, SSR)</li>
-                        <li><code>shared</code> → Reusable across both client/server</li>
                     </ul>
                 </li>
                 <li>
@@ -58,11 +57,6 @@ export function CE_NamingFile() {
                 client.profile.info.tsx
             </pre>
             <code>client.profile.info.tsx</code> → Client-side subcomponent showing profile information
-
-            <pre className="bg-gray-900 text-green-400 p-4 rounded mb-4 space-y-1 mt-5">
-                shared.utils.ts
-            </pre>
-            <code>shared.utils.ts</code> → Reusable utilities used by both frontend/backend
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Best Practices</h2>
             <ul className="list-disc list-inside mb-4 space-y-2">
