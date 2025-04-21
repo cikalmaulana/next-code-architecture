@@ -6,7 +6,7 @@ export function CE_Component() {
             <h1 className="text-2xl font-bold mb-4">Client and Server Components</h1>
             
             <p className="mb-4">
-                In Next.js, it's important to distinguish between <strong>Client Components</strong> and <strong>Server Components</strong> to ensure proper separation of concerns, improve performance, and maintain security.
+                In Next.js, it&apos;s important to distinguish between <strong>Client Components</strong> and <strong>Server Components</strong> to ensure proper separation of concerns, improve performance, and maintain security.
             </p>
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Server Components</h2>
@@ -43,7 +43,7 @@ export function CE_Component() {
             </ul>
 
             <p className="mt-6">
-                Understanding the distinction between server and client components helps in optimizing the application's performance, maintaining security, and ensuring better user experience.
+                Understanding the distinction between server and client components helps in optimizing the application&apos;s performance, maintaining security, and ensuring better user experience.
             </p>
         </div>
     );

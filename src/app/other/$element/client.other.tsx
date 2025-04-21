@@ -24,7 +24,7 @@ export function CE_Other() {
                 <li><strong>Environment-safe configs:</strong> Use <code>process.env</code> or config files for env-specific logic.</li>
                 <li><strong>Typed components:</strong> All components must define prop types using TypeScript.</li>
                 <li><strong>Consistent formatting:</strong> Use Prettier & ESLint for formatting and linting rules.</li>
-                <li><strong>Keep components small:</strong> Break down components if they're getting too large or doing too many things.</li>
+                <li><strong>Keep components small:</strong> Break down components if they&apos;re getting too large or doing too many things.</li>
                 <li><strong>Use Suspense & Error Boundaries:</strong> For async or error-prone logic in React.</li>
                 <li><strong>No direct DOM manipulation:</strong> Always prefer React way (e.g., refs, states).</li>
                 <li><strong>Ensure accessibility:</strong> Use semantic HTML and proper ARIA roles where needed.</li>

@@ -6,7 +6,7 @@ export function CE_NamingFunction() {
             <h1 className="text-2xl font-bold mb-4">Function Naming Convention</h1>
 
             <p className="mb-4">
-                Using a consistent naming pattern for functions improves clarity, traceability, and helps developers quickly understand each function's role in the application flow.
+                Using a consistent naming pattern for functions improves clarity, traceability, and helps developers quickly understand each function&apos;s role in the application flow.
             </p>
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Naming Format Guide</h2>
@@ -16,7 +16,7 @@ export function CE_NamingFunction() {
 
             <ul className="list-disc list-inside mb-4 space-y-2">
                 <li>
-                    <strong>[TYPE]:</strong> The function's architectural role:
+                    <strong>[TYPE]:</strong> The function&apos;s architectural role:
                     <ul className="list-disc list-inside ml-6 mt-1">
                         <li><code>APIS</code> → Handles API calls (e.g., fetch, post, delete)</li>
                         <li><code>CFN</code> → Client function, usually bridges UI and server logic</li>

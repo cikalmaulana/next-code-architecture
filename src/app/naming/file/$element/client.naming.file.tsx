@@ -69,7 +69,7 @@ export function CE_NamingFile() {
                 <li>Use lowercase and dot (`.`) separators only — avoid camelCase or underscores in filenames.</li>
                 <li>Be as descriptive as necessary, but avoid excessive length.</li>
                 <li>Group files in folders by primary feature (e.g., `login/`, `dashboard/`).</li>
-                <li>Don't name a file the same as a folder it's in (e.g., avoid `login/login.tsx`).</li>
+                <li>Don&apos;t name a file the same as a folder it&apos;s in (e.g., avoid `login/login.tsx`).</li>
                 <li>Prefix logic files with verbs, e.g., `use.auth.ts`, `get.profile.ts` if they’re utilities or hooks.</li>
             </ul>
 
