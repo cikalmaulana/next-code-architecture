@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
 export function CE_Sidebar() {
-    const router = useRouter()
+    const router = useRouter();
     const [expandedMenus, setExpandedMenus] = useState<string[]>([]);
     const pathname = usePathname();
 
@@ -15,7 +15,9 @@ export function CE_Sidebar() {
         );
     };
 
-    const isActive = (path: string) => pathname.includes(path);
+    // ✅ Improved logic
+    const isActive = (path: string) => pathname === path;
+    const isParentActive = (path: string) => pathname.startsWith(path);
 
     const getSubMenuItemClass = (path: string) => {
         return isActive(path) ? "text-green-400" : "text-white";
@@ -24,8 +26,11 @@ export function CE_Sidebar() {
     return (
         <div className="fixed top-0 left-0 h-full bg-black text-white p-4 w-64 z-50">
             <div className="space-y-6">
+                {/* --- NAMING --- */}
                 <div
-                    className={`text-lg font-semibold cursor-pointer ${isActive("/naming") ? "text-green-400" : ""}`}
+                    className={`text-lg font-semibold cursor-pointer ${
+                        isParentActive("/naming") ? "text-green-400" : ""
+                    }`}
                     onClick={() => toggleSubmenu("naming")}
                 >
                     Naming Conventions
@@ -65,8 +70,11 @@ export function CE_Sidebar() {
                     </ul>
                 )}
 
+                {/* --- STRUCTURE --- */}
                 <div
-                    className={`text-lg font-semibold cursor-pointer ${isActive("/structure") ? "text-green-400" : ""}`}
+                    className={`text-lg font-semibold cursor-pointer ${
+                        isParentActive("/structure") ? "text-green-400" : ""
+                    }`}
                     onClick={() => toggleSubmenu("structure")}
                 >
                     Structure
@@ -91,8 +99,11 @@ export function CE_Sidebar() {
                     </ul>
                 )}
 
+                {/* --- DOCUMENTATION --- */}
                 <div
-                    className={`text-lg font-semibold cursor-pointer ${isActive("/documentation") ? "text-green-400" : ""}`}
+                    className={`text-lg font-semibold cursor-pointer ${
+                        isParentActive("/documentation") ? "text-green-400" : ""
+                    }`}
                     onClick={() => toggleSubmenu("documentation")}
                 >
                     Code Documentation
@@ -101,7 +112,7 @@ export function CE_Sidebar() {
                     <ul className="ml-4 space-y-2 text-sm">
                         <li>
                             <Link href="/documentation" className={getSubMenuItemClass("/documentation")}>
-                                {isActive("/documentation") && "•"} Ovewview
+                                {isActive("/documentation") && "•"} Overview
                             </Link>
                         </li>
                         <li>
@@ -122,8 +133,11 @@ export function CE_Sidebar() {
                     </ul>
                 )}
 
+                {/* --- OTHER --- */}
                 <div
-                    className={`text-lg font-semibold cursor-pointer ${isActive("/other") ? "text-green-400" : ""}`}
+                    className={`text-lg font-semibold cursor-pointer ${
+                        isActive("/other") ? "text-green-400" : ""
+                    }`}
                     onClick={() => router.push("/other")}
                 >
                     Other Important
