@@ -28,7 +28,12 @@ export function CE_Other() {
                 <li><strong>Use Suspense & Error Boundaries:</strong> For async or error-prone logic in React.</li>
                 <li><strong>No direct DOM manipulation:</strong> Always prefer React way (e.g., refs, states).</li>
                 <li><strong>Ensure accessibility:</strong> Use semantic HTML and proper ARIA roles where needed.</li>
-                <li><strong>Export cleanly:</strong> Use index.ts for grouped re-exports and cleaner imports.</li>
+                <li>
+                    <strong>Keep code minimal and reusable:</strong> Make each file as short as possible.  
+                    Reuse components whenever you can, split logic into smaller functions,  
+                    and organize code per page, per menu, or per feature to keep everything simple,  
+                    readable, and easy to maintain.
+                </li>
             </ul>
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Best Practices Summary</h2>
@@ -37,8 +42,12 @@ export function CE_Other() {
                 <li>Optimize for <strong>readability</strong> before cleverness.</li>
                 <li>Apply naming conventions consistently across all layers (components, functions, interfaces).</li>
                 <li>Always think in terms of <strong>reusability</strong> and <strong>scalability</strong>.</li>
-                <li>Write code as if the next person to read it is you in 3 months.</li>
             </ul>
+
+            <div className="my-8 text-center bg-red-600 text-white font-extrabold text-lg py-5 px-6 rounded-lg shadow-lg tracking-wide">
+                ! WRITE CODE SO CLEAN AND CLEAR THAT FUTURE YOU — OR A NEW DEVELOPER — CAN INSTANTLY UNDERSTAND IT !<br />
+                ! THE EASIER YOUR CODE IS TO READ, THE FASTER YOUR TEAM MOVES. !
+            </div>
 
             <p className="mt-6">
                 Following these guidelines will ensure that your Next.js codebase remains clean, maintainable, and scalable — regardless of team size or project scope.
