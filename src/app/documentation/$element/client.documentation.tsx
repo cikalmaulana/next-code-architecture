@@ -21,7 +21,7 @@ export function CE_DocumentationMain() {
 
             <p className="mb-8 text-gray-300">
                 This section outlines how different types of documentation should be written to ensure consistency and 
-                clarity across your codebase — whether you're writing inline comments, documenting functions, or 
+                clarity across your codebase — whether you&apos;re writing inline comments, documenting functions, or 
                 describing larger modules.
             </p>
 
