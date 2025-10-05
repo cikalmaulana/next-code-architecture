@@ -2,7 +2,7 @@
 
 import { CE_StructureMain } from "./$element/client.structure"
 
-export default function Page(){
+export default async function Page(){
     return (
         <CE_StructureMain />
     )
