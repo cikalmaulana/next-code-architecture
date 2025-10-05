@@ -9,6 +9,11 @@ export function CE_Other() {
                 Writing clean and maintainable code is essential for scaling a Next.js project. Below are the key practices that every developer should follow to ensure consistency, readability, and performance across the codebase.
             </p>
 
+            <div className="my-8 text-center bg-red-600 text-white font-extrabold text-lg py-5 px-6 rounded-lg shadow-lg tracking-wide">
+                ! WRITE CODE SO CLEAN AND CLEAR THAT FUTURE YOU — OR A NEW DEVELOPER — CAN INSTANTLY UNDERSTAND IT !<br />
+                ! THE EASIER YOUR CODE IS TO READ, THE FASTER YOUR TEAM MOVES. !
+            </div>
+
             <h2 className="text-xl font-semibold mt-6 mb-2">Checklist</h2>
             <ul className="list-disc list-inside mb-4 space-y-2">
                 <li><strong>No <code>any</code> type:</strong> Avoid using the <code>any</code> type to maintain type safety. Use specific types or <code>unknown</code> when unsure.</li>
@@ -31,7 +36,7 @@ export function CE_Other() {
                 <li>
                     <strong>Keep code minimal and reusable:</strong> Make each file as short as possible.  
                     Reuse components whenever you can, split logic into smaller functions,  
-                    and organize code per page, per menu, or per feature to keep everything simple,  
+                    and organize code by page, by menu, or by feature to keep everything simple,  
                     readable, and easy to maintain.
                 </li>
             </ul>
@@ -43,11 +48,6 @@ export function CE_Other() {
                 <li>Apply naming conventions consistently across all layers (components, functions, interfaces).</li>
                 <li>Always think in terms of <strong>reusability</strong> and <strong>scalability</strong>.</li>
             </ul>
-
-            <div className="my-8 text-center bg-red-600 text-white font-extrabold text-lg py-5 px-6 rounded-lg shadow-lg tracking-wide">
-                ! WRITE CODE SO CLEAN AND CLEAR THAT FUTURE YOU — OR A NEW DEVELOPER — CAN INSTANTLY UNDERSTAND IT !<br />
-                ! THE EASIER YOUR CODE IS TO READ, THE FASTER YOUR TEAM MOVES. !
-            </div>
 
             <p className="mt-6">
                 Following these guidelines will ensure that your Next.js codebase remains clean, maintainable, and scalable — regardless of team size or project scope.
