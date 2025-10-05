@@ -33,11 +33,6 @@ export function CE_Sidebar() {
                 {expandedMenus.includes("naming") && (
                     <ul className="ml-4 space-y-2 text-sm">
                         <li>
-                            <Link href="/naming/component" className={getSubMenuItemClass("/naming/component")}>
-                                {isActive("/naming/component") && "•"} Component
-                            </Link>
-                        </li>
-                        <li>
                             <Link href="/naming/file" className={getSubMenuItemClass("/naming/file")}>
                                 {isActive("/naming/file") && "•"} File
                             </Link>
@@ -97,11 +92,6 @@ export function CE_Sidebar() {
                         <li>
                             <Link href="/documentation/functions" className={getSubMenuItemClass("/documentation/functions")}>
                                 {isActive("/documentation/functions") && "•"} Functions
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/documentation/classes" className={getSubMenuItemClass("/documentation/classes")}>
-                                {isActive("/documentation/classes") && "•"} Classes
                             </Link>
                         </li>
                         <li>

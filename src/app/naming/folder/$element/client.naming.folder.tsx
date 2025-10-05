@@ -32,9 +32,9 @@ export function CE_NamingFolder() {
             <h2 className="text-xl font-semibold mt-6 mb-2">Examples</h2>
 
             <pre className="bg-gray-900 text-green-400 p-4 rounded mb-2 space-y-1">
-                @[login]
+                @login
             </pre>
-            <code>@[login]</code> → A scoped folder containing grouped logic or files for login.
+            <code>@login</code> → A scoped folder containing grouped logic or files for login.
 
             <pre className="bg-gray-900 text-green-400 p-4 rounded mb-2 space-y-1 mt-5">
                 profile
@@ -42,7 +42,7 @@ export function CE_NamingFolder() {
             <code>profile</code> → A standard feature folder for profile-related pages or components.
 
             <pre className="bg-gray-900 text-green-400 p-4 rounded mb-2 space-y-1 mt-5">
-                $[element]
+                $element
             </pre>
             <code>$[element]</code> → A folder for internal UI elements that are not route-based.
 

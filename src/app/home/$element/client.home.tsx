@@ -30,9 +30,14 @@ export default function CE_Home() {
                             System Structure
                         </span>
                     </Link>
-                    <Link href="/commenting">
+                    <Link href="/documentation">
                         <span className="text-lg text-green-200 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer">
                             Code Documentation
+                        </span>
+                    </Link>
+                    <Link href="/other">
+                        <span className="text-lg text-green-200 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer">
+                            Other Important
                         </span>
                     </Link>
                 </div>

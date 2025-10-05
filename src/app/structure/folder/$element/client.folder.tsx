@@ -62,18 +62,27 @@ export function CE_Folder() {
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Best Practices</h2>
             <ul className="list-disc list-inside mb-4 space-y-2">
-                <li>Use lowercase and single-word folder names for simplicity.</li>
+                <li>Use camelCase and single-word folder names for simplicity.</li>
                 <li>Use symbol-prefixed folders to separate structure:
                     <ul className="list-disc ml-6">
                         <li><code>$[folder]</code> → For structural modules (e.g., <code>$action</code>, <code>$function</code>)</li>
                         <li><code>[param]</code> → For dynamic routes in Next.js</li>
                     </ul>
                 </li>
-                <li>Each page (e.g., <code>login</code>, <code>home</code>, <code>profile/[id]</code>) should replicate this structure internally using <code>$</code>-prefixed folders.</li>
-                <li><strong>Each file inside a page’s folders (like <code>$action</code>, <code>$function</code>, etc.) is strictly scoped to that page only.</strong>
+                <li>
+                    <strong>Each file inside a page’s folders (like <code>$action</code>, <code>$function</code>, etc.) is strictly scoped to that page only.</strong>
                     <ul className="list-disc ml-6">
-                        <li>If <code>profile</code> has <code>action.get.user.ts</code>, and <code>login</code> needs the same logic, you must create a new version inside <code>login/$action</code>.</li>
-                        <li>Even if a child dynamic route (e.g., <code>profile/[id]</code>) needs similar logic, it must create its own copy within <code>profile/[id]/$action</code>.</li>
+                        <li>
+                        If <code>profile</code> has <code>action.get.user.ts</code>, and <code>login</code> needs the same logic, you must create a new version inside <code>login/$action</code>.
+                        </li>
+                        <li>
+                        Even if a child dynamic route (e.g., <code>profile/[id]</code>) needs similar logic, it must create its own copy within <code>profile/[id]/$action</code>.
+                        </li>
+                        <li>
+                        <strong>Reason:</strong> This keeps each page’s logic fully self-contained and prevents cross-dependencies between parent and child routes.  
+                        By maintaining strict scoping, you avoid confusion like a child page calling its parent’s actions—or worse, a parent calling a child’s logic.  
+                        This also ensures that future updates in one page won’t accidentally break or force changes in another, preserving modularity and isolation.
+                        </li>
                     </ul>
                 </li>
                 <li>Avoid cross-folder imports between page folders to prevent coupling and maintain modularity.</li>

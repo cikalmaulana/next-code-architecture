@@ -28,30 +28,30 @@ export function CE_NamingFunction() {
                 <li>
                     <strong>[VERB] [OBJECT]:</strong> Clearly describe the action and target of the function:
                     <ul className="list-disc list-inside ml-6 mt-1">
-                        <li><code>getProfile</code></li>
-                        <li><code>submitForm</code></li>
-                        <li><code>fetchData</code></li>
-                        <li><code>updateSettings</code></li>
-                        <li><code>renderCard</code></li>
+                        <li><code>GetProfile</code></li>
+                        <li><code>SubmitForm</code></li>
+                        <li><code>FetchData</code></li>
+                        <li><code>UpdateSettings</code></li>
+                        <li><code>RenderCard</code></li>
                     </ul>
                 </li>
             </ul>
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Examples</h2>
             <pre className="bg-gray-900 text-green-400 p-4 rounded mb-4 space-y-1">
-                APIS_getUser.ts
+                APIS_GetUser.ts
             </pre>
-            <code>APIS_getUser.ts</code> → Fetch user data from external API.
+            <code>APIS_GetUser.ts</code> → Fetch user data from external API.
 
             <pre className="bg-gray-900 text-green-400 p-4 rounded mb-4 space-y-1 mt-5">
-                CFN_handleLogin.ts
+                CFN_HandleLogin.ts
             </pre>
-            <code>CFN_handleLogin.ts</code> → Client-side function to handle login flow.
+            <code>CFN_HandleLogin.ts</code> → Client-side function to handle login flow.
 
             <pre className="bg-gray-900 text-green-400 p-4 rounded mb-4 space-y-1 mt-5">
-                SFN_authenticateUser.ts
+                SFN_LoginMain.ts
             </pre>
-            <code>SFN_authenticateUser.ts</code> → Server-side function for user auth logic.
+            <code>SFN_LoginMain.ts</code> → Server-side function for login page.
 
             <pre className="bg-gray-900 text-green-400 p-4 rounded mb-4 space-y-1 mt-5">
                 CE_LoginForm.tsx
@@ -67,8 +67,6 @@ export function CE_NamingFunction() {
             <ul className="list-disc list-inside mb-4 space-y-2">
                 <li>Use clear and descriptive verbs (e.g., get, fetch, handle, update, render).</li>
                 <li>Keep function names short but meaningful.</li>
-                <li>Stick to camelCase for the function name part (after the prefix).</li>
-                <li>Group files by their function type (e.g., CFN/ folder, APIS/ folder).</li>
                 <li>Use a consistent prefix (like APIS_, CFN_) to make navigation and refactoring easier.</li>
                 <li>Always name files the same as the exported function inside.</li>
             </ul>

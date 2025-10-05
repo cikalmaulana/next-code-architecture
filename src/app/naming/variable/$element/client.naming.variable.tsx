@@ -26,22 +26,6 @@ export function CE_NamingVariable() {
             <pre className="bg-gray-900 text-green-400 p-4 rounded mb-2 space-y-1">
                 userName
             </pre>
-            <code>userName</code> → A string variable that stores the name of the user.
-
-            <pre className="bg-gray-900 text-green-400 p-4 rounded mb-2 space-y-1 mt-5">
-                isAuthenticated
-            </pre>
-            <code>isAuthenticated</code> → Boolean indicating if the user is logged in.
-
-            <pre className="bg-gray-900 text-green-400 p-4 rounded mb-2 space-y-1 mt-5">
-                totalAmount
-            </pre>
-            <code>totalAmount</code> → Number variable representing the total of something (e.g., cart total).
-
-            <pre className="bg-gray-900 text-green-400 p-4 rounded mb-2 space-y-1 mt-5">
-                fetchUserData
-            </pre>
-            <code>fetchUserData</code> → Function name indicating it retrieves user data.
 
             <h2 className="text-xl font-semibold mt-6 mb-2">Best Practices</h2>
             <ul className="list-disc list-inside mb-4 space-y-2">
