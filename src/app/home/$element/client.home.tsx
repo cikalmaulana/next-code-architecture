@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export default async function CE_Home() {
+export function CE_Home() {
     return (
         <div className="">
             <div className="text-center mb-12 max-w-3xl mx-auto">

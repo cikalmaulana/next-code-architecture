@@ -9,7 +9,7 @@ export function CE_DocumentationMain() {
 
             <p className="mb-4 text-gray-300">
                 <strong>Code documentation</strong> provides clear explanations of how and why specific parts of the code work.
-                It ensures that every developer — whether new or experienced — can easily understand the project’s logic,
+                It ensures that every developer — whether new or experienced — can easily understand the project&apos;s logic,
                 purpose, and structure without guessing or reverse-engineering the implementation.
             </p>
 
