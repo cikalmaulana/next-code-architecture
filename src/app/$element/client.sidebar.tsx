@@ -33,6 +33,11 @@ export function CE_Sidebar() {
                 {expandedMenus.includes("naming") && (
                     <ul className="ml-4 space-y-2 text-sm">
                         <li>
+                            <Link href="/naming" className={getSubMenuItemClass("/naming")}>
+                                {isActive("/naming") && "•"} Overview
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/naming/file" className={getSubMenuItemClass("/naming/file")}>
                                 {isActive("/naming/file") && "•"} File
                             </Link>
@@ -69,6 +74,11 @@ export function CE_Sidebar() {
                 {expandedMenus.includes("structure") && (
                     <ul className="ml-4 space-y-2 text-sm">
                         <li>
+                            <Link href="/structure" className={getSubMenuItemClass("/structure")}>
+                                {isActive("/structure") && "•"} Overview
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/structure/folder" className={getSubMenuItemClass("/structure/folder")}>
                                 {isActive("/structure/folder") && "•"} Folder
                             </Link>
@@ -90,13 +100,18 @@ export function CE_Sidebar() {
                 {expandedMenus.includes("documentation") && (
                     <ul className="ml-4 space-y-2 text-sm">
                         <li>
+                            <Link href="/documentation" className={getSubMenuItemClass("/documentation")}>
+                                {isActive("/documentation") && "•"} Ovewview
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/documentation/functions" className={getSubMenuItemClass("/documentation/functions")}>
                                 {isActive("/documentation/functions") && "•"} Functions
                             </Link>
                         </li>
                         <li>
-                            <Link href="/documentation/modules" className={getSubMenuItemClass("/documentation/modules")}>
-                                {isActive("/documentation/modules") && "•"} Modules
+                            <Link href="/documentation/variables" className={getSubMenuItemClass("/documentation/variables")}>
+                                {isActive("/documentation/variables") && "•"} Variables
                             </Link>
                         </li>
                         <li>
