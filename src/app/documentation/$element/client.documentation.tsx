@@ -9,7 +9,7 @@ export function CE_DocumentationMain() {
 
             <p className="mb-4 text-gray-300">
                 <strong>Code documentation</strong> provides clear explanations of how and why specific parts of the code work.
-                It ensures that every developer — whether new or experienced — can easily understand the project&apos;s logic,
+                It ensures that every developer, whether new or experienced, can easily understand the project&apos;s logic,
                 purpose, and structure without guessing or reverse-engineering the implementation.
             </p>
 
@@ -21,7 +21,7 @@ export function CE_DocumentationMain() {
 
             <p className="mb-8 text-gray-300">
                 This section outlines how different types of documentation should be written to ensure consistency and 
-                clarity across your codebase — whether you&apos;re writing inline comments, documenting functions, or 
+                clarity across your codebase, whether you&apos;re writing inline comments, documenting functions, or 
                 describing larger modules.
             </p>
 
@@ -33,9 +33,9 @@ export function CE_DocumentationMain() {
                             Functions
                         </span>
                     </Link>
-                    <Link href="/documentation/modules">
+                    <Link href="/documentation/variables">
                         <span className="text-lg text-green-200 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer">
-                            Modules
+                            Variables
                         </span>
                     </Link>
                     <Link href="/documentation/comments">
@@ -48,7 +48,7 @@ export function CE_DocumentationMain() {
 
             <p className="text-gray-400 text-center max-w-2xl mx-auto">
                 Consistent and well-written documentation ensures your project remains transparent, maintainable, 
-                and future-proof — empowering developers to focus on building, not deciphering.
+                and future-proof, empowering developers to focus on building, not deciphering.
             </p>
         </div>
     )

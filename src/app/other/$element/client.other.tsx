@@ -10,7 +10,7 @@ export function CE_Other() {
             </p>
 
             <div className="my-8 text-center bg-red-600 text-white font-extrabold text-lg py-5 px-6 rounded-lg shadow-lg tracking-wide">
-                ! WRITE CODE SO CLEAN AND CLEAR THAT FUTURE YOU — OR A NEW DEVELOPER — CAN INSTANTLY UNDERSTAND IT !<br />
+                ! WRITE CODE SO CLEAN AND CLEAR THAT FUTURE YOU OR A NEW DEVELOPER CAN INSTANTLY UNDERSTAND IT !<br />
                 ! THE EASIER YOUR CODE IS TO READ, THE FASTER YOUR TEAM MOVES. !
             </div>
 
@@ -49,8 +49,61 @@ export function CE_Other() {
                 <li>Always think in terms of <strong>reusability</strong> and <strong>scalability</strong>.</li>
             </ul>
 
+            <h2 className="text-xl font-semibold mt-6 mb-2">Use Reusable UI Components</h2>
+
+            <p className="mb-4">
+                Always use components provided inside the <code>lib</code> directory (such as Button, Input, Modal, etc).
+                Do not create custom HTML elements for the same purpose unless the component does not exist.
+            </p>
+
+            <pre className="bg-gray-900 text-red-400 p-4 rounded mb-4">
+            {
+            `// ❌ Forbidden
+            <button className="bg-green-500 px-4 py-2 rounded">Save</button>
+            <input className="border px-2" />`
+            }
+            </pre>
+
+            <pre className="bg-gray-900 text-green-400 p-4 rounded mb-4">
+            {
+            `// ✅ Correct
+            <CE_Button>Save</CE_Button>
+            <CE_Input />`
+            }
+            </pre>
+
+            <p className="mb-4">
+                Reusable components are not only about visual consistency, they centralize behavior.
+                Validation rules, loading states, accessibility, disabled logic, and styling are handled once
+                and automatically applied everywhere.
+            </p>
+
+            <ul className="list-disc list-inside mb-4 space-y-2">
+                <li>Prevents inconsistent UI across pages</li>
+                <li>Fix bugs in one place instead of many</li>
+                <li>Ensures accessibility and keyboard behavior remain correct</li>
+                <li>Allows global style updates without refactoring pages</li>
+                <li>Reduces duplicated logic and unexpected edge cases</li>
+            </ul>
+
+            <p className="mb-4">
+                Direct HTML usage creates hidden technical debt, every duplicated button becomes a future maintenance task.
+                A shared component turns hundreds of fixes into one change.
+            </p>
+
+            <pre className="bg-gray-900 text-green-400 p-4 rounded mb-4">
+            {
+            `Change Button padding once -> entire app updates`
+            }
+            </pre>
+
+            <p className="mb-4">
+                Treat components inside <code>lib</code> as part of the framework layer of this project.
+                Pages should assemble UI, not reinvent it.
+            </p>
+
             <p className="mt-6">
-                Following these guidelines will ensure that your Next.js codebase remains clean, maintainable, and scalable — regardless of team size or project scope.
+                Following these guidelines will ensure that your Next.js codebase remains clean, maintainable, and scalable, regardless of team size or project scope.
             </p>
         </div>
     );

@@ -53,6 +53,11 @@ export function CE_NamingMain() {
                             Interface Naming
                         </span>
                     </Link>
+                    <Link href="/naming/enum">
+                        <span className="text-lg text-green-200 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105 cursor-pointer">
+                            Enum Naming
+                        </span>
+                    </Link>
                 </div>
             </div>
 

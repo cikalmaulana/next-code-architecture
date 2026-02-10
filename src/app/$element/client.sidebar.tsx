@@ -24,7 +24,7 @@ export function CE_Sidebar() {
     };
 
     return (
-        <div className="fixed top-0 left-0 h-full bg-black text-white p-4 w-64 z-50">
+        <div className="fixed top-0 left-0 h-screen overflow-y-auto bg-black text-white p-4 pb-20 w-64 z-50">
             <div className="space-y-6">
                 {/* --- NAMING --- */}
                 <div
@@ -65,6 +65,11 @@ export function CE_Sidebar() {
                         <li>
                             <Link href="/naming/interface" className={getSubMenuItemClass("/naming/interface")}>
                                 {isActive("/naming/interface") && "•"} Interface
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/naming/enum" className={getSubMenuItemClass("/naming/enum")}>
+                                {isActive("/naming/enum") && "•"} Enum
                             </Link>
                         </li>
                     </ul>
@@ -116,8 +121,8 @@ export function CE_Sidebar() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/documentation/functions" className={getSubMenuItemClass("/documentation/functions")}>
-                                {isActive("/documentation/functions") && "•"} Functions
+                            <Link href="/documentation/function" className={getSubMenuItemClass("/documentation/function")}>
+                                {isActive("/documentation/function") && "•"} Functions
                             </Link>
                         </li>
                         <li>
@@ -132,6 +137,45 @@ export function CE_Sidebar() {
                         </li>
                     </ul>
                 )}
+
+                {/* --- ARCHITECTURE --- */}
+                    <div
+                        className={`text-lg font-semibold cursor-pointer ${
+                            isParentActive("/architecture") ? "text-green-400" : ""
+                        }`}
+                        onClick={() => toggleSubmenu("architecture")}
+                    >
+                        Architecture
+                    </div>
+                    {expandedMenus.includes("architecture") && (
+                        <ul className="ml-4 space-y-2 text-sm">
+                            <li>
+                                <Link href="/architecture" className={getSubMenuItemClass("/architecture")}>
+                                    {isActive("/architecture") && "•"} Overview
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/architecture/rendering" className={getSubMenuItemClass("/architecture/rendering")}>
+                                    {isActive("/architecture/rendering") && "•"} Rendering (SSR vs CSR)
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/architecture/ssr" className={getSubMenuItemClass("/architecture/ssr")}>
+                                    {isActive("/architecture/ssr") && "•"} Server Component
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/architecture/csr" className={getSubMenuItemClass("/architecture/csr")}>
+                                    {isActive("/architecture/csr") && "•"} Client Component
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/architecture/fetching" className={getSubMenuItemClass("/architecture/fetching")}>
+                                    {isActive("/architecture/fetching") && "•"} Data Fetching
+                                </Link>
+                            </li>
+                        </ul>
+                    )}
 
                 {/* --- OTHER --- */}
                 <div
