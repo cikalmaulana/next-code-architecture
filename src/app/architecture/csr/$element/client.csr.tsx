@@ -11,8 +11,8 @@ export function CE_ArchitectureCSR() {
             </p>
 
             <p className="mb-4">
-                In Next.js App Router, this happens when a component contains the <strong>"use client"</strong> directive.
-                The component no longer runs on the server and instead executes on the user's device.
+                In Next.js App Router, this happens when a component contains the <strong>{"use client"}</strong> directive.
+                The component no longer runs on the server and instead executes on the user{"'"}s device.
             </p>
 
             <h2 className="text-xl font-semibold mt-6 mb-2">How It Works</h2>
@@ -59,7 +59,7 @@ export default function Page() {
 </pre>
 
             <p className="mb-4">
-                The data request happens inside the user's browser.
+                The data request happens inside the user{"'"}s browser.
                 The UI updates after the request finishes.
             </p>
 
